@@ -166,29 +166,11 @@
         .fade-in {
             animation: fadeIn 1s ease forwards;
         }
-        .birthday-card {
-            background: rgba(0, 0, 0, 0.45);
-            border-radius: 12px;
-            padding: 20px;
-            backdrop-filter: blur(4px);
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            margin: 20px 0;
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
     <div class="logo">星琼岚Sat</div>
     <div class="content">
-        <div class="birthday-card fade-in">
-            <h2>生日祝福</h2>
-            <p>亲爱的猫猫，今天是你的生日！</p>
-            <p>愿你的每一天都充满快乐和惊喜，生日快乐！</p>
-            <button onclick="showMessage()">点击这里查看祝福</button>
-        </div>
-
         <div class="card fade-in">
             <h1>星琼岚Sat · 3.2 Hz · 观测者</h1>
             <p>3.2 Hz 心跳已同步，欢迎回传。</p>
@@ -366,11 +348,6 @@
 
         // Chatbase 聊天机器人
         (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="6_GdwTMwXC5WzfzgV2nFQ";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-
-        // 生日祝福卡片
-        function showMessage() {
-            alert('祝猫猫生日快乐！愿你岁岁平安，万事顺意，永远被爱包围！');
-        }
     </script>
 </body>
 </html>
